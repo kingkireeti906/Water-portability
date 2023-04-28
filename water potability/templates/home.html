@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+
+<head>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <h1>WATER POTABILITY</h1>
+    <div class="container">
+        <h2> WATER POTABILITY</h2>
+        <div class="answer">
+            <p>{{prediction_text}}</p>
+        </div>
+        <h5>parameters</h5>
+        <form action="\predict" method="post">
+            <div class="parameters">
+                <label for="phvalue"></label>
+                <input type="number" id="phvalue" name="pvalue" step="0.00000000000001"  placeholder="ph Value">
+                <label for="organicValue"></label>
+                <input type="number" id="organicValue" name="Organic"  step="0.00000000000001" placeholder="Organic">
+                <label for="Trihalovalues"></label>
+                <input type="number" id="Trihalovalues" name="tri"  step="0.00000000000001"placeholder="Trihalomethanes">
+            </div>
+            <div class="parameter2">
+                <label for="Turbidvalues"></label>
+                <input type="number" id="Turbidvalues" name="turb" step="0.00000000000001"  placeholder="Turbidity">
+                <label for="Soildvalues"></label>
+                <input type="number" id="Soildvalues" name="Solid"  step="0.00000000000001"placeholder=" Solids">
+                <label for="cholorovalues"></label>
+                <input type="number" id="cholorovalues" name="choloro"  step="0.00000000000001" placeholder=" Chloramines">
+                
+            </div>
+            <div class="parameter3">
+                <label for="conductvalues"></label>
+                <input type="number" id="conductvalues" name="conduct" step="0.00000000000001"  placeholder="Conductivity">
+                <label for="sulfatevalues"></label>
+                <input type="number" id="sulfatevalues" name="sulfate" step="0.00000000000001"  placeholder="Sulfate">
+                <label for="Hardness"></label>
+                <input type="number" id="HardnessValues" name="Hardness" step="0.00000000000001" placeholder=" Hardness">
+            </div>
+            <input type="Submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
